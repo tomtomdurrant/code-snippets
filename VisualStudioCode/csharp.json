@@ -161,13 +161,13 @@
     ],
     "description": "Assert.AreEqual to String.Empty"
   },
-  "Assert.AreEqual to String.Empty (variation 2)": {
-    "prefix": "aese",
-    "body": [
-      "Assert.AreEqual<string>(String.Empty, ${1:actual}, \"${2:errorMessage} should be empty.\");"
-    ],
-    "description": "Assert.AreEqual to String.Empty"
-  },
+  // "Assert.AreEqual to String.Empty (variation 2)": {
+  //   "prefix": "aese",
+  //   "body": [
+  //     "Assert.AreEqual<string>(String.Empty, ${1:actual}, \"${2:errorMessage} should be empty.\");"
+  //   ],
+  //   "description": "Assert.AreEqual to String.Empty"
+  // },
   "Assert.AreNotEqual to String.Empty": {
     "prefix": "anese",
     "body": [
@@ -175,7 +175,6 @@
     ],
     "description": "Assert.AreNotEqual to String.Empty"
   },
-  
   "Assert.AreEqual on two properties": {
     "prefix": "aep",
     "body": [
@@ -295,7 +294,6 @@
     ],
     "description": "Assert strings are not equal"
   },
-  
   "Assert bool properties are not equal": {
     "prefix": "anepb",
     "body": [
@@ -642,20 +640,20 @@
     ],
     "description": "Throw not implemented exception"
   },
-  "User interface try catch": {
-    "prefix": "uitrywin",
-    "body": [
-      "try",
-      "{",
-      " $0",
-      "}",
-      "catch (Exception ex)",
-      "{",
-      "  MessageBox.Show(ex.ToString());",
-      "} "
-    ],
-    "description": "User interface try catch"
-  },
+  // "User interface try catch": {
+  //   "prefix": "uitrywin",
+  //   "body": [
+  //     "try",
+  //     "{",
+  //     " $0",
+  //     "}",
+  //     "catch (Exception ex)",
+  //     "{",
+  //     "  MessageBox.Show(ex.ToString());",
+  //     "} "
+  //   ],
+  //   "description": "User interface try catch"
+  // },
   "Try catch block": {
     "prefix": "tcb",
     "body": [
@@ -949,16 +947,16 @@
     ],
     "description": "Return false"
   },
-  "if block with braces": {
-    "prefix": "ifb",
-    "body": [
-      "if ($0)",
-      "{",
-      "",
-      "}"
-    ],
-    "description": "if block with braces"
-  },
+  // "if block with braces": {
+  //   "prefix": "ifb",
+  //   "body": [
+  //     "if ($0)",
+  //     "{",
+  //     "",
+  //     "}"
+  //   ],
+  //   "description": "if block with braces"
+  // },
   "Return String.Empty": {
     "prefix": "rse",
     "body": [
@@ -1051,7 +1049,7 @@
       ""
     ],
     "description": "Method that returns int"
-  }  ,
+  },
   "Method that returns a type of your choosing": {
     "prefix": "mm",
     "body": [
@@ -1068,8 +1066,8 @@
     "body": [
       "else if (${1}${2})",
       "{",
-        "${2}",
-        "${3}",
+      "${2}",
+      "${3}",
       " $0",
       "}"
     ],
